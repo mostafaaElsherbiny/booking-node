@@ -1,0 +1,20 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": "5432",
+  "username": "postgres",
+  "password": "new_password",
+  "database": "events-db",
+  "synchronize": false,
+  "logging": false,
+  "entities": [
+    "src/app/**/entities/**/*.ts"
+  ],
+  "migrations": [
+    "src/app/core/database/migrations/*.ts"
+  ],
+  "migrationsTableName": "migrations",
+  "cli": {
+    "migrationsDir": "src/app/core/database/migrations"
+  }
+}
